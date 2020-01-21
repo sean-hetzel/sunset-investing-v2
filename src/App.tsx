@@ -1,7 +1,9 @@
 import React from "react";
-import "./assets/scss/blk-design-system-react.scss";
+import "./assets/css/blk-design-system-react.css";
 import "./assets/css/nucleo-icons.css";
 import "./App.css";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+
 import {
   Button,
   Card,
@@ -13,51 +15,24 @@ import {
   ListGroup,
   Container,
   Row,
-  Col
+  Col,
+  Navbar
 } from "reactstrap";
+import Footer from "components/Footer";
+import NavBar from "components/NavBar";
+import Home from "components/Home";
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <Button
-        className="btn-icon btn-simple btn-round btn-neutral"
-        color="default"
-        href="#pablo"
-        onClick={e => e.preventDefault()}
-      >
-        <i className="fab fa-twitter" />
-      </Button>{" "}
-      <Card className="card-stats">
-        <CardBody>
-          <Row>
-            <Col md="4" xs="5">
-              <div className="icon-big text-center icon-warning">
-                <i className="tim-icons icon-trophy text-warning" />
-              </div>
-            </Col>
-            <Col md="8" xs="7">
-              <div className="numbers">
-                <CardTitle tag="p">3,237</CardTitle>
-                <p />
-                <p className="card-category">Awards</p>
-              </div>
-            </Col>
-          </Row>
-        </CardBody>
-      </Card>
+      <NavBar />
+      <BrowserRouter>
+        <Switch>
+          <Route path="/components" render={props => <Home {...props} />} />
+
+          <Redirect from="/" to="/components" />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 };

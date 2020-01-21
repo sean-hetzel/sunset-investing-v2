@@ -482,7 +482,7 @@
     .square-1{
       height: 300px;
       width: 300px;
-      background-image: url("../../assets/img/square1.png");
+      background-image: url("./assets/img/square1.png");
       top: 175px;
       right: 150px;
       opacity: 0.8;
@@ -555,7 +555,7 @@
 .landing-page,
 .profile-page,
 .register-page{
-  background-image: url("../../assets/img/dots.png");
+  background-image: url("./assets/img/dots.png");
   background-size: contain;
 }
 
