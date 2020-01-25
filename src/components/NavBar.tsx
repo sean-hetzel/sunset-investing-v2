@@ -26,7 +26,7 @@ class NavbarDocs extends React.Component {
         <Navbar className="bg-primary" expand="lg">
           <Container>
             <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
-              Navbar
+              Senset Investing
             </NavbarBrand>
             <button className="navbar-toggler" id="navbarNav" type="button">
               <span className="navbar-toggler-bar navbar-kebab" />
@@ -42,12 +42,12 @@ class NavbarDocs extends React.Component {
                 </NavItem>
                 <NavItem>
                   <NavLink href="#pablo" onClick={e => e.preventDefault()}>
-                    Features
+                    Properties
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="#pablo" onClick={e => e.preventDefault()}>
-                    Pricing
+                    Dashboard
                   </NavLink>
                 </NavItem>
                 <NavItem>
@@ -56,7 +56,16 @@ class NavbarDocs extends React.Component {
                     href="#pablo"
                     onClick={e => e.preventDefault()}
                   >
-                    Disabled
+                    Holdings
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    className="disabled"
+                    href="#pablo"
+                    onClick={e => e.preventDefault()}
+                  >
+                    About
                   </NavLink>
                 </NavItem>
               </Nav>
