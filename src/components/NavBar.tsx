@@ -23,7 +23,7 @@ class NavbarDocs extends React.Component {
   render() {
     return (
       <>
-        <Navbar className="bg-primary" expand="lg">
+        <Navbar className="bg-success" expand="lg">
           <Container>
             <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
               Senset Investing
