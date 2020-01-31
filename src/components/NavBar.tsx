@@ -1,5 +1,6 @@
 import React from "react";
 
+import logo from "../assets/img/sunset-investing-logo.png"
 // reactstrap components
 import {
   Collapse,
@@ -26,6 +27,7 @@ class NavbarDocs extends React.Component {
         <Navbar className="bg-success" expand="lg">
           <Container>
             <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <img src={logo} alt="Sunset Investing" width="100"/>
               Senset Investing
             </NavbarBrand>
             <button className="navbar-toggler" id="navbarNav" type="button">
