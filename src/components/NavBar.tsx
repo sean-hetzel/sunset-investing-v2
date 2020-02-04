@@ -24,7 +24,7 @@ class NavbarDocs extends React.Component {
   render() {
     return (
       <>
-        <Navbar className="bg-success" expand="lg">
+        <Navbar className="bg-danger" expand="lg">
           <Container>
             <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
               <img src={logo} alt="Sunset Investing" width="100"/>
