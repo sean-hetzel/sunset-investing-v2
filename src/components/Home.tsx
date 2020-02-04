@@ -26,8 +26,8 @@ export default class Home extends Component<Props, State> {
   render() {
     return (
       <>
-        hi
-        <Button color="success">Success</Button>
+        {/* hi
+        <Button color="success">Success</Button> */}
 
       </>
     )
