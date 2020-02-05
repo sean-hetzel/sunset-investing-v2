@@ -28,7 +28,7 @@ class NavbarDocs extends React.Component {
           <Container>
             <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
               <img src={logo} alt="Sunset Investing" width="100"/>
-              Senset Investing
+              Sunset Investing
             </NavbarBrand>
             <button className="navbar-toggler" id="navbarNav" type="button">
               <span className="navbar-toggler-bar navbar-kebab" />
