@@ -20,8 +20,6 @@ import {
   Container
 } from "reactstrap";
 
-// test
-
 class NavbarDocs extends React.Component {
   render() {
     return (
