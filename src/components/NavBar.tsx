@@ -25,16 +25,15 @@ class NavbarDocs extends React.Component {
             <>
                 <Navbar className="bg-danger" expand="lg">
                     <Container>
-                        <NavbarBrand
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                        >
-                            <img
-                                src={logo}
-                                alt="Sunset Investing"
-                                width="100"
-                            />
-                            Sunset Investing
+                        <NavbarBrand>
+                            <Link to="home">
+                                <img
+                                    src={logo}
+                                    alt="Sunset Investing"
+                                    width="100"
+                                />
+                                Sunset Investing
+                            </Link>
                         </NavbarBrand>
                         <button
                             className="navbar-toggler"
@@ -47,12 +46,6 @@ class NavbarDocs extends React.Component {
                         </button>
                         <UncontrolledCollapse navbar toggler="#navbarNav">
                             <Nav navbar>
-                                <NavItem className="active">
-                                    <NavLink>
-                                        <Link to="home">Home</Link>
-                                    </NavLink>
-                                </NavItem>
-
                                 <NavItem>
                                     <NavLink>
                                         <Link to="properties">Properties</Link>
@@ -60,8 +53,9 @@ class NavbarDocs extends React.Component {
                                 </NavItem>
 
                                 <NavItem>
-                                    <NavLink>
-                                        <Link to="dashboard">Dashboard</Link>
+                                    <NavLink tag={Link} to="/dashboard">
+                                      Dashboard
+                                        {/* <Link to="dashboard">Dashboard</Link> */}
                                     </NavLink>
                                 </NavItem>
 
@@ -76,7 +70,6 @@ class NavbarDocs extends React.Component {
                                         <Link to="about">About</Link>
                                     </NavLink>
                                 </NavItem>
-                                
                             </Nav>
                         </UncontrolledCollapse>
                     </Container>
