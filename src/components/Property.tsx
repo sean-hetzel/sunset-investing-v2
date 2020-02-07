@@ -1,20 +1,18 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import NavBar from "components/NavBar";
 
-interface Props {
-    
-}
-interface State {
-    
-}
+interface Props {}
+interface State {}
 
 export default class Property extends Component<Props, State> {
-    state = {}
+    state = {};
 
     render() {
         return (
-            <div>
-                
-            </div>
-        )
+            <>
+                <NavBar />
+                property
+            </>
+        );
     }
 }

@@ -1,20 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-interface Props {
-    
-}
-interface State {
-    
-}
+interface Props {}
+interface State {}
 
 export default class Login extends Component<Props, State> {
-    state = {}
+    state = {};
 
     render() {
-        return (
-            <div>
-                
-            </div>
-        )
+        return <>login</>;
     }
 }

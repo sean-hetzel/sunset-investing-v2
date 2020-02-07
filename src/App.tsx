@@ -9,15 +9,16 @@ import {
     Redirect
 } from "react-router-dom";
 import Home from "components/Home";
-import Properties from "components/Properties"
-import Property from "components/Property"
-import Holdings from "components/Holdings"
-import Dashboard from "components/Dashboard"
-import Profile from "components/Profile"
-import Cart from "components/Cart"
-import Login from "components/Login"
-import SignUp from "components/SignUp"
-import NotFound from "components/NotFound"
+import Properties from "components/Properties";
+import Property from "components/Property";
+import Holdings from "components/Holdings";
+import Dashboard from "components/Dashboard";
+import About from "components/About"
+import Profile from "components/Profile";
+import Cart from "components/Cart";
+import Login from "components/Login";
+import SignUp from "components/SignUp";
+import NotFound from "components/NotFound";
 
 const App: React.FC = () => {
     return (
@@ -52,6 +53,11 @@ const App: React.FC = () => {
                                 render={props => <Dashboard {...props} />}
                             />
                             <Route
+                                path="/about"
+                                exact
+                                render={props => <About {...props} />}
+                            />
+                            <Route
                                 path="/profile"
                                 exact
                                 render={props => <Profile {...props} />}
@@ -64,11 +70,7 @@ const App: React.FC = () => {
                             <Route
                                 exact
                                 path="/login"
-                                render={props => (
-                                    <Login
-                                        {...props}
-                                    />
-                                )}
+                                render={props => <Login {...props} />}
                             />
                             <Route path="/signup" component={SignUp} />
                             <Route path="*" component={NotFound} />

@@ -1,13 +1,13 @@
-import React, { ReactElement } from 'react'
+import React, { ReactElement } from "react";
+import NavBar from "components/NavBar";
 
-interface Props {
-    
-}
+interface Props {}
 
 export default function NotFound({}: Props): ReactElement {
     return (
-        <div>
-            
-        </div>
-    )
+        <>
+            <NavBar />
+            not found
+        </>
+    );
 }
