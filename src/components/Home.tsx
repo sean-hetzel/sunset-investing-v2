@@ -13,6 +13,7 @@ import {
   Col,
   Navbar
 } from "reactstrap";
+import NavBar from "components/NavBar"
 interface Props {
   
 }
@@ -26,6 +27,7 @@ export default class Home extends Component<Props, State> {
   render() {
     return (
       <>
+      <NavBar/>
         {/* hi
         <Button color="success">Success</Button> */}
 
