@@ -19,7 +19,6 @@ import Login from "components/Login"
 import SignUp from "components/SignUp"
 import NotFound from "components/NotFound"
 
-
 const App: React.FC = () => {
     return (
         <div className="App">
