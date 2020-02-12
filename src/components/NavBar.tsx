@@ -19,8 +19,6 @@ import {
 } from "reactstrap";
 import logo from "../assets/img/sunset-investing-logo.png";
 
-// lol 
-
 class NavbarDocs extends React.Component {
     render() {
         return (
