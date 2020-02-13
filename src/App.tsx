@@ -28,7 +28,7 @@ const App: React.FC = () => {
                     <Router>
                         <Switch>
                             <Route
-                                path="/"
+                                path="/home"
                                 exact
                                 render={props => <Home {...props} />}
                             />
@@ -73,6 +73,7 @@ const App: React.FC = () => {
                                 render={props => <Login {...props} />}
                             />
                             <Route path="/signup" component={SignUp} />
+                            <Redirect path="/" to="/home"/>
                             <Route path="*" component={NotFound} />
                         </Switch>
                     </Router>

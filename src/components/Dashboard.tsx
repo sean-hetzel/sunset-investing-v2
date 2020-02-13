@@ -5,14 +5,14 @@ interface Props {}
 interface State {}
 
 export default class Dashboard extends Component<Props, State> {
-    state = {};
+  state = {};
 
-    render() {
-        return (
-            <>
-                <Dashboard />
-                dashboard
-            </>
-        );
-    }
+  render() {
+    return (
+      <>
+        <NavBar />
+        dashboard
+      </>
+    );
+  }
 }
