@@ -20,9 +20,12 @@ import Login from "components/Login";
 import SignUp from "components/SignUp";
 import NotFound from "components/NotFound";
 
-// testing
+// const BASE_URL = "https://morning-garden-63256.herokuapp.com/api/v1"
+// const PROPERTIES = "/properties";
+// const HOLDINGS = "/holdings";
 
 const App: React.FC = () => {
+    
     return (
         <div className="App">
             <div className="wrapper">
