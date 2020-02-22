@@ -1,18 +1,22 @@
 import React, { Component } from "react";
 import NavBar from "components/NavBar";
+import { Breadcrumb, BreadcrumbItem } from "reactstrap";
 
 interface Props {}
 interface State {}
 
 export default class Holdings extends Component<Props, State> {
-    state = {};
+  state = {};
 
-    render() {
-        return (
-            <>
-                <NavBar />
-                Holdings
-            </>
-        );
-    }
+  render() {
+    return (
+      <>
+        <NavBar />
+        <Breadcrumb>
+          <BreadcrumbItem>Home</BreadcrumbItem>
+          <BreadcrumbItem>Holdings</BreadcrumbItem>
+        </Breadcrumb>
+      </>
+    );
+  }
 }
