@@ -24,6 +24,8 @@ import NotFound from "components/NotFound";
 // const PROPERTIES = "/properties";
 // const HOLDINGS = "/holdings";
 
+// idk
+
 const App: React.FC = () => {
   return (
     <div className="App">
